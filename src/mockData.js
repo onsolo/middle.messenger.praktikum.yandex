@@ -1,4 +1,5 @@
-const avatarStubUrl = '/src/assets/images/avatar-stub.svg';
+import avatarStubUrl from '/src/assets/images/avatar-stub.svg';
+import profileAvatar from '/src/assets/images/profile-avatar-stub.svg'
 export const chatsList = [
     {
         id: 1,
@@ -118,5 +119,6 @@ export const currentUser = {
     first_name: 'Иван',
     second_name: 'Иванов',
     display_name: 'Иван',
-    phone: '+7 (909) 967 30 30'
+    phone: '+7 (909) 967 30 30',
+    avatar_url: profileAvatar
 }

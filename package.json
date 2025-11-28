@@ -6,6 +6,10 @@
   "dependencies": {
     "handlebars": "^4.7.8"
   },
+  "devDependencies": {
+    "sass": "^1.94.2",
+    "vite": "^7.2.4"
+  },
   "engines": {
     "node": "22.21.1"
   },
@@ -22,9 +26,5 @@
   "bugs": {
     "url": "https://github.com/onsolo/middle.messenger.praktikum.yandex/issues"
   },
-  "homepage": "https://github.com/onsolo/middle.messenger.praktikum.yandex#readme",
-  "devDependencies": {
-    "sass": "^1.94.2",
-    "vite": "^7.2.4"
-  }
+  "homepage": "https://github.com/onsolo/middle.messenger.praktikum.yandex#readme"
 }
