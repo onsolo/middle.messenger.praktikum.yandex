@@ -87,7 +87,8 @@ export default class App {
                 data: {...this.getCurrentUser()}
             },
             'password': {
-                template: Pages.ChangePasswordPage
+                template: Pages.ChangePasswordPage,
+                data: {...this.getCurrentUser()}
             },
             '404': {
                 template: Pages.ErrorPage,
