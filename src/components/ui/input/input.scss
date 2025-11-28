@@ -1,0 +1,29 @@
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  box-sizing: border-box;
+
+  @include font-style(400, 16px, 18px, var(--text-primary));
+  @include transition();
+
+  &--bordered {
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 1px solid var(--stroke);
+
+    &:focus {
+      border-color: var(--stroke-active);
+    }
+  }
+
+  &--filled {
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: var(--bg-tertiary);
+    width: 100%;
+
+    font-size: 14px;
+    text-align: center;
+  }
+}

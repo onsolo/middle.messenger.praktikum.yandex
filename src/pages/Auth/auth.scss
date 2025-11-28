@@ -1,0 +1,36 @@
+.auth-layout {
+  height: calc(100vh - 38px);
+
+  @include flex-center;
+}
+
+.auth-card {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  background-color: var(--bg-main);
+  padding: 50px 30px 30px 30px;
+
+  min-width: 340px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include font-style(500, 20px, 24px, var(--text-primary));
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-bottom: 40px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

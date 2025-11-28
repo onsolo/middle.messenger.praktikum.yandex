@@ -1,0 +1,32 @@
+<div class="page-wrapper">
+    <main class="messenger-layout">
+        <aside class="messenger__sidebar">
+            <div class="messenger__profile-link">
+                {{> Link text="Профиль" data-page="profile"}}
+                {{> ChevronRight }}
+            </div>
+
+            <form class="messenger__search">
+                {{> Input id="search" type="text" placeholder="Поиск" is-filled="ture"}}
+            </form>
+
+            <ul class="messenger__chats-list">
+                {{#each chats}}
+                    {{> ChatListItem
+                            avatar-url=this.avatarUrl
+                            title=this.title
+                            message=this.message
+                            time=this.time
+                            badge=this.badge
+                    }}
+                {{/each}}
+            </ul>
+        </aside>
+
+        <div class="messenger__chat">
+            Выберите чат, чтобы отправить сообщение
+        </div>
+    </main>
+
+    {{> Footer}}
+</div>

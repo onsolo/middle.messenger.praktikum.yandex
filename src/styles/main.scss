@@ -1,0 +1,31 @@
+:root {
+  --text-primary: #1E1E1E;
+  --text-secondary: #999999;
+  --text-white: #fff;
+  --text-link: #3369F3;
+  --text-danger: #FF0000;
+
+  --stroke: #EAEAEA;
+  --stroke-active: #3369F3;
+
+  --bg-main: #fff;
+  --bg-primary: #3369F3;
+  --bg-secondary: #FBFBFB;
+  --bg-tertiary: #EFEFEF;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+  margin:0;
+  padding: 0;
+  height: 100%;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

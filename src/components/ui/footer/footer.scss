@@ -1,0 +1,6 @@
+.footer {
+  padding: 10px 0;
+  gap: 12px;
+
+  @include flex-center;
+}
