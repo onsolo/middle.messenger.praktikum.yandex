@@ -35,4 +35,4 @@ npm run build
 ```
 
 Посмотреть развернутый проект можно по ссылке:
-👉 **[Открыть приложение](app.netlify.com)**
+👉 **[Открыть приложение](https://nsolo-praktikum.netlify.app/)**
