@@ -4,8 +4,7 @@
   "description": "---",
   "main": "index.js",
   "dependencies": {
-    "handlebars": "^4.7.8",
-    "vite": "^7.2.4"
+    "handlebars": "^4.7.8"
   },
   "engines": {
     "node": "22.21.1"
@@ -25,6 +24,7 @@
   },
   "homepage": "https://github.com/onsolo/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
-    "sass": "^1.94.2"
+    "sass": "^1.94.2",
+    "vite": "^7.2.4"
   }
 }
