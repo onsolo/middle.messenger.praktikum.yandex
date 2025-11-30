@@ -5,13 +5,14 @@
                 Вход
             </h1>
             <form class="auth-card__form">
-                {{> Input id="login" type="text" placeholder="Логин" is-bordered="true" }}
-                {{> Input id="password" type="password" placeholder="Пароль" is-bordered="true" }}
+                {{> Input id="login" name="login" type="text" placeholder="Логин" is-bordered="true" }}
+                {{> Input id="password" name="password" type="password" placeholder="Пароль" is-bordered="true" }}
+
+                <div class="auth-card__actions">
+                    {{> Button id="submitLogin" text="Войти" type="submit" }}
+                    {{> Link href="#" data-page="register" text="Нет аккаута?" is-active="true" }}
+                </div>
             </form>
-            <div class="auth-card__actions">
-                {{> Button id="submitLogin" text="Войти" }}
-                {{> Link href="#" data-page="register" text="Нет аккаута?" is-active="true" }}
-            </div>
         </div>
 
     </main>

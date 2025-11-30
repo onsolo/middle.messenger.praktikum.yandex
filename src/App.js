@@ -32,7 +32,7 @@ Handlebars.registerPartial('ProfileAvatar', ProfileAvatar);
 export default class App {
     constructor() {
         this.state = {
-            currentPage: '404'
+            currentPage: 'login'
         };
         this.appElement = document.getElementById('app');
 
@@ -45,7 +45,6 @@ export default class App {
         const context = route.data ? route.data : {};
         const template = Handlebars.compile(route.template);
         const htmlString = template(context);
-
 
         this.updateDOM(htmlString);
     }
