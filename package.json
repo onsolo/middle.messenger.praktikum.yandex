@@ -14,7 +14,8 @@
     "node": "22.21.1"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
+    "start": "vite build && vite preview --port 3000",
     "build": "vite build"
   },
   "repository": {

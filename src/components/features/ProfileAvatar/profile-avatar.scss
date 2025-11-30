@@ -28,6 +28,10 @@
     @include font-style(400, 12px, 14px, var(--text-white));
     @include flex-center;
     @include transition(opacity, .3s, ease-in-out);
+
+    & .input {
+      display: none
+    }
   }
 
   &:hover .profile-avatar__overlay {
