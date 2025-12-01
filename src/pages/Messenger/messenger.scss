@@ -1,0 +1,49 @@
+.messenger-layout {
+  display: flex;
+}
+
+.messenger {
+  &__sidebar {
+    width: 310px;
+    height: calc(100vh - 38px);
+    border-right: 1px solid var(--stroke);
+    overflow: hidden;
+  }
+
+  &__profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+
+    margin: 20px 0;
+    padding: 0 10px;
+
+    & .link {
+      color: var(--text-secondary);
+    }
+  }
+
+  &__search {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  &__chats-list {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    height: calc(100vh - 117px + 38px);
+    overflow-y: auto;
+  }
+
+  &__chat {
+    flex: 1;
+
+    @include font-style(400, 14px, 16px, var(--text-secondary));
+    @include flex-center;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2",
+    "vite": "^7.2.4"
+  },
+  "engines": {
+    "node": "22.21.1"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite build && vite preview --port 3000",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onsolo/middle.messenger.praktikum.yandex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onsolo/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/onsolo/middle.messenger.praktikum.yandex#readme"
+}

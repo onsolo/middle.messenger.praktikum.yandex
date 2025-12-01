@@ -1,0 +1,14 @@
+.back-link {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  border-radius: 5px;
+  background-color: var(--bg-tertiary);
+  padding: 10px 12px;
+  cursor: pointer;
+}

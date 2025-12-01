@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+
+  @include font-style(400, 12px, 14px, var(--text-primary));
+
+  &--active {
+    color: var(--text-link);
+  }
+}

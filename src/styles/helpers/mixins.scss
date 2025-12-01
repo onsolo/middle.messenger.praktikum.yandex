@@ -1,0 +1,20 @@
+@mixin font-style($font-weight, $font-size, $line-height, $color) {
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($element: all, $time: 0.25s, $function: linear, $delay: 0s) {
+  transition-duration: $time;
+  transition-delay: $delay;
+  transition-timing-function: $function;
+  transition-property: #{$element};
+}

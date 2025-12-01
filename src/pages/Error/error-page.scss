@@ -1,0 +1,29 @@
+.error-layout {
+  height: calc(100vh - 38px);
+
+  @include flex-center;
+}
+
+.error-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include font-style(500, 40px, 120%, var(--text-primary));
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
+
+    @include font-style(500, 20px, 120%, var(--text-primary));
+  }
+
+  &__link {
+    & .link {
+      color: var(--text-link);
+    }
+  }
+}

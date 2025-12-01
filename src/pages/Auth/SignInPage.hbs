@@ -1,0 +1,25 @@
+<div class="page-wrapper">
+    <main class="auth-layout">
+        <div class="auth-card">
+            <h1 class="auth-card__title">
+                Регистрация
+            </h1>
+            <form class="auth-card__form">
+                {{> Input id="email" name="email" type="text" placeholder="Почта" is-bordered="true" }}
+                {{> Input id="login" name="login" type="text" placeholder="Логин" is-bordered="true" }}
+                {{> Input id="first_name" name="first_name" type="text" placeholder="Имя" is-bordered="true" }}
+                {{> Input id="second_name" name="second_name" type="text" placeholder="Фамилия" is-bordered="true" }}
+                {{> Input id="phone" name="phone" type="text" placeholder="Телефон" is-bordered="true" }}
+                {{> Input id="password" name="password" type="password" placeholder="Пароль" is-bordered="true" }}
+                {{> Input id="repeat-password" name="repeat-password" type="password" placeholder="Пароль (ещё раз)" is-bordered="true" }}
+
+                <div class="auth-card__actions">
+                    {{> Button id="submitRegister" text="Зарегистрироваться" type="submit" }}
+                    {{> Link href="#" data-page="login" text="Войти" is-active="true" }}
+                </div>
+            </form>
+        </div>
+    </main>
+
+    {{> Footer}}
+</div>
