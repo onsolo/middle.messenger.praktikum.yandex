@@ -1,13 +1,11 @@
 .chat-list-item {
   display: flex;
   gap: 10px;
-
   padding: 12px 10px;
   border-top: 1px solid var(--stroke);
-
   cursor: pointer;
 
-  @include transition();
+  @include transition;
 
   &:hover {
     background-color: var(--bg-secondary);
@@ -49,6 +47,7 @@
 
   &__time {
     text-align: right;
+
     @include font-style(400, 9px, 10px, var(--text-secondary));
   }
 
