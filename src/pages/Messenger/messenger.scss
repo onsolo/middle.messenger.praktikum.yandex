@@ -15,7 +15,6 @@
     align-items: center;
     justify-content: flex-end;
     gap: 4px;
-
     margin: 20px 0;
     padding: 0 10px;
 
@@ -32,18 +31,174 @@
   &__chats-list {
     display: flex;
     flex-direction: column;
-
     margin: 0;
     padding: 0;
-
     height: calc(100vh - 117px + 38px);
     overflow-y: auto;
   }
 
   &__chat {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-main);
+  }
+}
+
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--stroke);
+  height: 54px;
+  box-sizing: border-box;
+
+  &__avatar {
+    width: 34px;
+    height: 34px;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__name {
     flex: 1;
 
-    @include font-style(400, 14px, 16px, var(--text-secondary));
-    @include flex-center;
+    @include font-style(600, 13px, 14px, var(--text-primary));
+  }
+
+  &__menu-btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: var(--bg-secondary);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+  }
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+
+  &__date {
+    text-align: center;
+    margin: 20px 0;
+
+    @include font-style(400, 12px, 12px, var(--text-secondary));
+  }
+}
+
+.message {
+  max-width: 60%;
+  display: flex;
+
+  &__content {
+    background-color: #F8F8F8;
+    padding: 11px;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    position: relative;
+
+    @include font-style(400, 12px, 15px, var(--text-primary));
+
+    p {
+      margin: 0 0 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--mine {
+    align-self: flex-end;
+
+    .message__content {
+      background-color: #E4EDFD;
+      color: var(--text-primary);
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &__image {
+    margin-top: 10px;
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+  }
+
+  &__time {
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    @include font-style(400, 9px, 9px, var(--text-secondary));
+
+    .message--mine & {
+      float: none;
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    margin-top: -5px;
+  }
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-top: 1px solid var(--stroke);
+
+  &__form {
+    width: 100%;
+    display: flex;
+    gap: 12px
+  }
+
+  &__attach, &__send {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-size: 20px;
+    padding: 0;
+
+    &:hover {
+      color: var(--text-primary);
+    }
+  }
+
+  &__input input {
+    flex: 1;
+    background-color: #EFEFEF;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    outline: none;
+
+    @include font-style(400, 12px, 12px, var(--text-primary));
+
+    &::placeholder {
+      color: var(--text-secondary);
+    }
   }
 }

@@ -1,0 +1,5 @@
+node_modules
+dist
+.github
+src/assets
+src/components/icons
