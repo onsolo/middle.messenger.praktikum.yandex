@@ -4,6 +4,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "types": ["node"],
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -22,5 +23,5 @@
     "sourceMap": true,
     "strictNullChecks": true
   },
-  "include": ["src/**/*", "declarations.d.ts"]
+  "include": ["src/**/*", "declarations.d.ts", "vite.config.ts"]
 }
