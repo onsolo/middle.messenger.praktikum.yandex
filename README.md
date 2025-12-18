@@ -11,6 +11,8 @@
 * **JavaScript (ES6+)** — логика приложения.
 * **Handlebars** — шаблонизация компонентов.
 * **Vite** — сборка проекта.
+* **TypeScript** - типизация
+* **Eslint,stylelint** - линтинг
 
 
 ---
@@ -32,6 +34,21 @@ npm run start
 Сборка проекта
 ```bash
 npm run build
+```
+
+Проверка типов
+```bash
+npm run prebuild
+```
+
+Линтер
+```bash
+npm run lint
+```
+
+Линтер стилей
+```bash
+npm run stylelint
 ```
 
 Посмотреть развернутый проект можно по ссылке:
